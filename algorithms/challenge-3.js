@@ -1,6 +1,7 @@
 function increment(arr, value) {
-    let sum = arr.filter(x => x.val += value)
-    return sum
+    let result = arr.filter(x => x.val += value)
+    return result
+   
 }
 
 module.exports = increment

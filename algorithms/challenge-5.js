@@ -1,12 +1,9 @@
 function arraySum(arr1, arr2) {
-    //let sum = arr1.map((val,idx) => val + arr2[idx])
-    //console.log(sum)
-    let newArr = []
+    let sum = []
     for(i = 0; i < arr1.length; i++){
-        newArr.push(arr1[i] + arr2[i % arr2.length])
-
+        sum.push(arr1[i] + arr2[i % arr2.length])
     }
-    return newArr
+    return sum
 }
 
 module.exports = arraySum
